@@ -83,5 +83,18 @@ int main(void)
     robo.putBox(50,89,37,38,50,90);
 
     robo.writeOFF((char*)"Robo.off");
+
+    sculptor elipsoide (41,41,41);
+    elipsoide.putEllipsoid(20,20,20,15,10,7);
+    elipsoide.cutEllipsoid(25,20,20,15,8,5);
+    elipsoide.writeOFF((char*)"Elipsoide.off");
+
+    sculptor esfera(41,41,41);
+    esfera.putSphere(20,20,20,10);
+    esfera.cutSphere(24,20,20,10);
+    esfera.writeOFF((char*)"Esfera.off");
+
+
+
     return 0;
 }
